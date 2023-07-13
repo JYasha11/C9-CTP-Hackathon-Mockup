@@ -1,0 +1,14 @@
+if i have repeating elements, i can name my own class with tailwind, ex.)
+(this would go in the tailwind config iirc)
+
+    .btn_blue {
+        @apply [styles]
+    }
+
+and then i can use this class like so:
+
+    <button class="btn-blue"/>
+
+good for readability and prevents duplication.
+
+use componenets where you can
