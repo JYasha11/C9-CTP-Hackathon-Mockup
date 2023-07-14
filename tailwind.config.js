@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      customFooter: 'rgb(3,26,76)'
+    }
   },
   plugins: [require('flowbite/plugin')],
 }
