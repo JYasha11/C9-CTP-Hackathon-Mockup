@@ -46,9 +46,7 @@ code {
   position: relative;
   color: #dedde4;
   font-size: 34px;
-  text-transform: uppercase;
- 
-  
+  text-transform: uppercase;  
 }
 
 .banner-block .logo-main {
@@ -76,20 +74,19 @@ code {
   opacity: 0.3;
   }
 
-
-
 svg {
 	font-family: "Zen Dots", sans-serif;
 	width: 100%; 
   z-index: 1;
 }
+
 svg text {
 	animation: stroke 9s infinite alternate;
 	stroke-width: 2;
 	stroke: #365FA0;
-	font-size: 100px;
-  
+	font-size: 100px;  
 }
+
 @keyframes stroke {
 	0%   {
 		fill: rgba(72,138,204,0); stroke: rgb(255, 255, 255);
@@ -117,7 +114,5 @@ svg text {
     color: #dedde4;
     font-size: 26px;
     text-transform: uppercase;
-   
-    
   }
 }

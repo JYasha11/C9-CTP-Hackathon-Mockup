@@ -12,14 +12,12 @@ const FullscreenImageLayout = () => {
                         src={CTPImg}
                         alt="ctp"
                         className="logo-main"
-                    />
-                    
+                    />                 
                     <svg>
                         <text x="50%" y="50%" dy=".35em" text-anchor="middle">
                         HACKATHON
                         </text>
-                    </svg>
-                    
+                    </svg>                   
                     {/* <h1 className="main-title">HACKATHON 2023</h1> */}
                     <h2>ART & TECH</h2>
                     <p>August 22-23, 2023</p>
