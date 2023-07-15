@@ -87,8 +87,8 @@ svg text {
 	animation: stroke 9s infinite alternate;
 	stroke-width: 2;
 	stroke: #365FA0;
-	font-size: 90px;
-  line-height: 90px;
+	font-size: 100px;
+  
 }
 @keyframes stroke {
 	0%   {
@@ -104,3 +104,20 @@ svg text {
 }
 
 
+@media screen and (max-width: 1000px) {
+  svg text{
+    font-size: 30px;
+  }
+  .banner-block h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .banner-block p {
+    position: relative;
+    color: #dedde4;
+    font-size: 26px;
+    text-transform: uppercase;
+   
+    
+  }
+}

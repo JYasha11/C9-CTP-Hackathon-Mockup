@@ -16,7 +16,7 @@ const FullscreenImageLayout = () => {
                     
                     <svg>
                         <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                        HACKATHON 2023
+                        HACKATHON
                         </text>
                     </svg>
                     
