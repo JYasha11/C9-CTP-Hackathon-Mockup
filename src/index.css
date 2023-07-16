@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 
 body {
   margin: 0;
@@ -14,4 +15,104 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.banner-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  background:  linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("/src/assets/bg.jpg") no-repeat center/ cover;
+}
+
+.banner-block h1 {
+  position: relative;
+  font-family: 'Zen Dots';
+  font-size: 96px;
+  color: white;
+}
+.banner-block h2 {
+  position: relative;
+  color: #dedde4;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: 'Zen Dots';
+}
+
+.banner-block p {
+  position: relative;
+  color: #dedde4;
+  font-size: 34px;
+  text-transform: uppercase;  
+}
+
+.banner-block .logo-main {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.image-tech, .image-art {
+  position: absolute;
+  height: 100%;
+  min-width: 100px;
+}
+.image-tech {
+  width: 50%;
+  background: url("/src/assets/tech.png") no-repeat center/ cover;
+  left:0;
+  opacity: 0.8;
+}
+
+.image-art {
+  width: 50%;
+  background: url("/src/assets/art.png") no-repeat center/ cover;
+  right:0;
+  opacity: 0.3;
+  }
+
+svg {
+	font-family: "Zen Dots", sans-serif;
+	width: 100%; 
+  z-index: 1;
+}
+
+svg text {
+	animation: stroke 9s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 100px;  
+}
+
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgb(255, 255, 255);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 100%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,204,0); stroke: rgb(255, 255, 255); }
+	80%  {fill: rgba(72,138,204,0); stroke: rgb(255, 255, 255); stroke-width: 3; }
+	100% {
+		fill: rgb(255, 255, 255); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 100% 0; stroke-width: 0;
+	}
+}
+
+
+@media screen and (max-width: 1000px) {
+  svg text{
+    font-size: 30px;
+  }
+  .banner-block h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .banner-block p {
+    position: relative;
+    color: #dedde4;
+    font-size: 26px;
+    text-transform: uppercase;
+  }
 }
