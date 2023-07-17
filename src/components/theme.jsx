@@ -2,7 +2,7 @@ import React from 'react';
 
 const Theme = () => {
     return (
-        <div className="flex items-center justify-center pt-24 mb-24">
+        <div className="flex items-center justify-center pt-0 mb-24">
             <div className="text-justify max-w-2xl">
                 <h1 className="text-center text-lg font-semibold mb-4 text-blue-800">HACKATHON 2023</h1>
                 <h1 className="text-center text-4xl font-extrabold mb-8">Theme: Art & Technology</h1>
